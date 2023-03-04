@@ -5,7 +5,7 @@ import Value from "./ValueDiv/Value"
 import Footer from "./footerDiv/Footer"
 const Index = () => {
   return (
-    <div>
+    <div className='w-[85%] m-auto bg-white '>
       <Nav/>
       <Search/>
       <Jobs/>
