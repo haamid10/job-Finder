@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Index from './components/Index'
 const App = () => {
   return (
     <div>
-      App
+      <Index/>
     </div>
   )
 }
