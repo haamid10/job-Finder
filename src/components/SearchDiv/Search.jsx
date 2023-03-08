@@ -5,7 +5,7 @@ import {BsHouseDoor} from 'react-icons/bs'
 import {CiLocationOn} from 'react-icons/ci'
 const Search = () => {
   return (
-    <div className=' searchDiv grid  s gp-10  bg-greyIsh rounded-[10px] p-[3rem]'>
+    <div className=' searchDiv grid  s gap-10  bg-greyIsh rounded-[10px] p-[3rem]'>
       <form action="">
       
         <div className="firstDiv flex justify-between items-center rounded-[8px] p-5 gap-[10px] bg-white shadow-lg shadow-greyIsh-700">
@@ -36,7 +36,50 @@ const Search = () => {
         </div>
 
       </form>
-      
+
+      <div className='secDiv flex items-center gap-10 justify-center'>
+
+        <div className='singleSearch flex items-center gap-2' >
+          <label htmlFor="relevance" className='text-[#808080] '>Sort by:</label>
+
+          <select name="" id="relevance" className='bg-white rounded-[3px] px-4 py-1'>
+            <option value="">Relevance</option>
+            <option value="">Inclusive</option>
+            <option value="">Starts With</option>
+            <option value="">Contains</option>
+          </select>
+
+        </div>
+
+        <div className='singleSearch flex items-center gap-2' >
+          <label htmlFor="type" className='text-[#808080] '>type</label>
+
+          <select name="" id="type" className='bg-white rounded-[3px] px-4 py-1'>
+            <option value="">Full-time</option>
+            <option value="">Remote</option>
+            <option value="">Contract</option>
+            <option value="">Part-time</option>
+          </select>
+
+        </div>
+
+        <div className='singleSearch flex items-center gap-2' >
+          <label htmlFor="level" className='text-[#808080] '>Level</label>
+
+          <select name="" id="level" className='bg-white rounded-[3px] px-4 py-1'>
+            <option value="">Senior</option>
+            <option value="">Beginner</option>
+            <option value="">Intermediate</option>
+            <option value="">Advocate</option>
+          </select>
+
+        </div>
+
+        <span className='text-[#a1a1a1] cursor-pointer'>Clear All</span>
+
+      </div>
+
+
     </div>
   )
 }
